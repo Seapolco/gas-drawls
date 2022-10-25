@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Barlow','Roboto Condensed', sans-serif;
 }
 
 body {
@@ -7,7 +8,12 @@ body {
 }
 
 
+.rootContainer {
+    position: relative;
+    display:grid;
+}
 
+/* ----------------------------------------TOP NAV ------------------------------------------- */
 
 .topNavBar {
     display: grid;
@@ -51,6 +57,7 @@ body {
     display: grid;
     place-items: center;
     grid-column: 1/2;
+    padding-right: 35px;
 }
 
 
@@ -75,12 +82,14 @@ body {
 
 .sIconContainer, .bIconContainer {
     position:relative;
-    border:solid black 2px;
+    /* border:solid black 2px; */
     display: grid;
     place-items:center;
     width: 45px;
     height: 45px;
 }
+
+/* ----------------------------------------TOP ICONS ---------------------*/
 
 .searchIcon, .basketIcon {
     display: grid;
@@ -163,4 +172,149 @@ body {
     height: 40%;
     background-color: white ;
     top: 10px;
+}
+
+/*---------------------------------------- SIDE NAV ------------------------------*/
+
+
+.sidebarContainer {
+    position:absolute;
+    z-index: 2;
+    background-color: pink;
+    width: 75%;
+    height: 100%;
+    border: solid black 1px;
+    color:
+}
+
+.sidebarHeaderContainer {
+    padding: 12px 15px 12px 15px;
+    
+}
+.sidebarHeader {
+    display: flex;
+    justify-content: end;
+    border-bottom: 2px solid #6e592d80;
+}
+
+/* .sidebarNav {
+
+} */
+
+
+
+
+/* ----------------------------------------SIDE ICONS -----------------------------------*/
+
+.closeIconContainer {
+    display: grid;
+    place-items: center;
+    /* border: solid black 1px; */
+    height: 58px;
+    width: 46px;
+}
+.closeIcon {
+    display:grid;
+    place-items: center;
+    position: relative;
+    height: 28px;
+    width: 28px;
+    /* border: solid black 1px; */
+    padding: 2px 2px 3px 2px;
+}
+
+.closeLineOne, .closeLineTwo {
+    position: relative;
+    width: 70%;
+    height: 1px;
+    background-color: black;
+
+}
+
+.closeLineOne {
+    rotate: 45deg;
+    top: 7px;
+    right: -1px;
+}
+
+.closeLineTwo {
+    rotate: -45deg;
+    top: -4.5px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------- MAIN CONTENT -----------------------------*/
+
+.mainContent {
+
+    padding: 0 17px 0 17px;
+    z-index: 1;
+}
+
+.card {
+    display:grid;
+    place-items: center;
+    width: auto;
+    height: auto;
+}
+
+.mainTitle {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    letter-spacing:2px;
+}
+.collectionSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 17px
+}
+
+.albumcover {
+    aspect-ratio: 1/1;
+    height: 171px;
+    width: 171px; 
+    object-fit: contain;
+}
+
+/* .productMeta {
+
+} */
+
+.albumTitle {
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.albumPrice {
+    font-size: 13px;
+    font-weight: light;
+    text-align:center;
 }
