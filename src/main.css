@@ -178,23 +178,44 @@ body {
 
 
 .sidebarContainer {
+    /* visibility: hidden; */
     position:absolute;
     z-index: 2;
-    background-color: pink;
+    background-color: #ededed;
     width: 75%;
     height: 100%;
-    border: solid black 1px;
-    color:
+    /* border: solid black 1px; */
+}
+
+/* .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+} */
+
+.sidebarNav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    
+}
+
+.sidebarNavItem {
+    font-weight: bolder;
+    border-bottom: 1px solid #504121cb;
+    padding: 15px;
 }
 
 .sidebarHeaderContainer {
-    padding: 12px 15px 12px 15px;
+    padding: 12px 15px 0px 15px;
     
 }
 .sidebarHeader {
     display: flex;
     justify-content: end;
-    border-bottom: 2px solid #6e592d80;
+    border-bottom: 1px solid #504121cb;
 }
 
 /* .sidebarNav {
@@ -242,11 +263,7 @@ body {
     top: -4.5px;
 }
 
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+
 
 
 
