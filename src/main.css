@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+
+.topNavBar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 81px;
+    padding: 0 5px 0 5px;
+    border-bottom: solid 1px rgba(220, 221, 221, 0.247);
+}
+
+.hamIcon {
+    /* border: solid 2px black; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 25px;
+    width: 25px;
+    gap:5px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+
+.topline, .midline, .botline {
+    background-color: slategrey;
+    /* align-self: center; */
+    height: 2px;
+    border-radius: 2px;
+    width: 100%;
+}
+.topline{
+    align-self: end;
+}
+
+
+.midline {
+    align-self: center;
+    width: 85%;
+}
+.botline {
+    align-self: start;
+}
+.tnStart {
+    display: grid;
+    place-items: center;
+    grid-column: 1/2;
+}
+
+
+
+.tnMiddle {
+    display: grid;
+    place-items:center;
+    grid-column: 2/3;
+}
+
+.doomLogo {
+    aspect-ratio: 1/1;
+    height: 61px;
+}
+
+.tnEnd {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 3/4;
+}
+
+.sIconContainer, .bIconContainer {
+    position:relative;
+    border:solid black 2px;
+    display: grid;
+    place-items:center;
+    width: 45px;
+    height: 45px;
+}
+
+.searchIcon, .basketIcon {
+    display: grid;
+    align-items:center;
+    position:relative;
+    /* border: solid black 2px; */
+    height: 30px;
+    width: 30px;
+}
+
+.sLens {
+    position:relative;
+    z-index: 2;
+    width: 19px;
+    height: 19px;
+    border-radius: 9.5px;
+    border: solid black 1px;
+    background-color: white;
+    left: 2px;
+}
+
+.sHandle {
+    position: relative;
+    z-index: 1;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    rotate: 45deg;
+    left: 16px;
+    bottom: 4px;
+}
+
+.basketIcon {
+    display:grid;
+    place-items:center;
+    position:relative;
+}
+
+.outerbag {
+    display:grid;
+    place-items:center;
+    position:relative;
+    padding-top:2px;
+    border-bottom: 21px solid black;
+    border-left: 2px solid transparent;
+    border-right:2px solid transparent;
+    height: 0;
+    width: 21px;
+}
+
+.innerbag {
+    display:grid;
+    place-items:center;
+    position:relative;
+    z-index:3;
+    border-bottom: 19px solid white;
+    border-left: 1px solid transparent;
+    border-right:1px solid transparent;
+    height: 0;
+    width: 19px;
+    top: 1px;
+    left: -1px;
+}
+
+.handle {
+    position: absolute;
+    z-index: 4;
+    height: 70%;
+    width: 30%;
+    border:solid black 1px;
+    top:1px;
+    left: 11px;
+    border-radius: 40%;
+}
+
+.handlecutter {
+    position:absolute;
+    z-index:5;
+    width: 40%;
+    height: 40%;
+    background-color: white ;
+    top: 10px;
+}
