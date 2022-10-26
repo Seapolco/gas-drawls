@@ -184,8 +184,42 @@ body {
     background-color: #ededed;
     width: 75%;
     height: 100%;
+    translate: -100%;
+    transition: all cubic-bezier(.165,.84,.44,1) 0.25s;
     /* border: solid black 1px; */
 }
+
+.sidebar {
+    position:relative;
+    transform: translateY(25%);
+    opacity: 0;
+    transition: transform 0.4s ease-in, opacity 0.6s ease-in;
+} 
+
+.sidebarNavItem {
+    font-weight: bolder;
+    border-bottom: 1px solid #504121cb;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.7s linear;
+}
+
+/* .sidebarNavItem {
+    opacity: 0.5;
+    transform: opacity 0.3s;
+} */
+
+
+/* .sidebarHide {
+    position:relative;
+    transform: translateY(25%);
+    opacity: 0.1;
+    transition: transform 0.3s linear, opacity 0.6s ease-in;
+} */
+
+
+
+
 
 /* .sidebar {
     display: flex;
@@ -202,11 +236,7 @@ body {
     
 }
 
-.sidebarNavItem {
-    font-weight: bolder;
-    border-bottom: 1px solid #504121cb;
-    padding: 15px;
-}
+
 
 .sidebarHeaderContainer {
     padding: 12px 15px 0px 15px;
@@ -218,9 +248,6 @@ body {
     border-bottom: 1px solid #504121cb;
 }
 
-/* .sidebarNav {
-
-} */
 
 
 
@@ -331,7 +358,7 @@ body {
 }
 
 .albumPrice {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: light;
     text-align:center;
 }
