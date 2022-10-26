@@ -58,6 +58,7 @@ body {
     place-items: center;
     grid-column: 1/2;
     padding-right: 35px;
+    margin-right: 5px;
 }
 
 
@@ -66,9 +67,11 @@ body {
     display: grid;
     place-items:center;
     grid-column: 2/3;
+    margin-right: 5px;
 }
 
 .doomLogo {
+    margin-top: 5px;
     aspect-ratio: 1/1;
     height: 61px;
 }
@@ -85,8 +88,16 @@ body {
     /* border:solid black 2px; */
     display: grid;
     place-items:center;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
+}
+
+.sIconContainer {
+    justify-self: end;
+}
+
+.bIconContainer {
+    justify-self: start;
 }
 
 /* ----------------------------------------TOP ICONS ---------------------*/
@@ -114,12 +125,12 @@ body {
 .sHandle {
     position: relative;
     z-index: 1;
-    width: 10px;
+    width: 8px;
     height: 1px;
     background-color: black;
     rotate: 45deg;
-    left: 16px;
-    bottom: 4px;
+    left: 17px;
+    bottom: 5px;
 }
 
 .basketIcon {
@@ -128,7 +139,7 @@ body {
     position:relative;
 }
 
-.outerbag {
+/* .outerbag {
     display:grid;
     place-items:center;
     position:relative;
@@ -150,6 +161,32 @@ body {
     border-right:1px solid transparent;
     height: 0;
     width: 19px;
+    top: 1px;
+    left: -1px;
+} */
+
+.outerbag {
+    display:grid;
+    place-items:center;
+    position:relative;
+    padding-top:2px;
+    border-bottom: 19px solid black;
+    border-left: 2px solid transparent;
+    border-right:2px solid transparent;
+    height: 0;
+    width: 19px;
+}
+
+.innerbag {
+    display:grid;
+    place-items:center;
+    position:relative;
+    z-index:3;
+    border-bottom: 17px solid white;
+    border-left: 1px solid transparent;
+    border-right:1px solid transparent;
+    height: 0;
+    width: 17px;
     top: 1px;
     left: -1px;
 }
@@ -191,9 +228,9 @@ body {
 
 .sidebar {
     position:relative;
-    transform: translateY(25%);
+    transform: translateY(15%);
     opacity: 0;
-    transition: transform 0.4s ease-in, opacity 0.6s ease-in;
+    transition: transform 0.7s ease-in, opacity 0.5s ease-in;
 } 
 
 .sidebarNavItem {
@@ -326,10 +363,12 @@ body {
 }
 
 .mainTitle {
+    font-family: 'Barlow Condensed';
     font-size: 28px;
-    font-weight: 900;
+    font-weight: bolder;
     text-align: center;
     padding: 20px;
+    padding-bottom: 30px;
     margin-top: 20px;
     letter-spacing:2px;
 }

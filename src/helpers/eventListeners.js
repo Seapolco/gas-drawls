@@ -67,7 +67,7 @@ const eventListeners = function allEventListeners() {
             sidebarNavItem.forEach((navItem) => {
                 navItem.style.opacity  = '0';
             })
-            sideBar.style.transform = 'translateY(25%)';
+            sideBar.style.transform = 'translateY(15%)';
             sideBar.style.opacity = '0';
         }, '200')
 
